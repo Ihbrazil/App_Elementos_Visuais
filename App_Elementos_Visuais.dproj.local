@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/08/18 10:58:52.000.276,=C:\Users\MASTER\OneDrive\Documentos\Projetos\Embarcadero Delphi\Unit1.pas</Transaction>
+    <Transaction>2023/08/18 11:01:23.000.072,C:\Users\MASTER\OneDrive\Documentos\Projetos\Embarcadero Delphi\App_Elementos_Visuais\uFrmPrincipal.dfm=C:\Users\MASTER\OneDrive\Documentos\Projetos\Embarcadero Delphi\Unit1.dfm</Transaction>
+    <Transaction>2023/08/18 11:01:23.000.072,C:\Users\MASTER\OneDrive\Documentos\Projetos\Embarcadero Delphi\App_Elementos_Visuais\uFrmPrincipal.pas=C:\Users\MASTER\OneDrive\Documentos\Projetos\Embarcadero Delphi\Unit1.pas</Transaction>
+    <Transaction>2023/08/18 11:02:45.000.024,C:\Users\MASTER\OneDrive\Documentos\Projetos\Embarcadero Delphi\App_Elementos_Visuais\App_Elementos_Visuais.dproj=C:\Users\MASTER\OneDrive\Documentos\Projetos\Embarcadero Delphi\Project1.dproj</Transaction>
+    <Transaction>2023/08/20 13:52:07.727,=C:\Users\MASTER\OneDrive\Documentos\Projetos\Embarcadero Delphi\App_Elementos_Visuais\Unit1.pas</Transaction>
+    <Transaction>2023/08/20 13:53:14.928,C:\Users\MASTER\OneDrive\Documentos\Projetos\Embarcadero Delphi\App_Elementos_Visuais\uFrmDataHora.dfm=C:\Users\MASTER\OneDrive\Documentos\Projetos\Embarcadero Delphi\App_Elementos_Visuais\Unit1.dfm</Transaction>
+    <Transaction>2023/08/20 13:53:14.928,C:\Users\MASTER\OneDrive\Documentos\Projetos\Embarcadero Delphi\App_Elementos_Visuais\uFrmDataHora.pas=C:\Users\MASTER\OneDrive\Documentos\Projetos\Embarcadero Delphi\App_Elementos_Visuais\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>

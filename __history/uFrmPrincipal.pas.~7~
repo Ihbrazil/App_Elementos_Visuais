@@ -1,0 +1,93 @@
+unit uFrmPrincipal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.ComCtrls,
+  System.ImageList, Vcl.ImgList, Vcl.StdCtrls;
+
+type
+  TfrmPrincipal = class(TForm)
+    pnlTitulo: TPanel;
+    PgctrlPrincipal: TPageControl;
+    TabSheet1: TTabSheet;
+    TabSheet2: TTabSheet;
+    TabSheet3: TTabSheet;
+    GroupBox1: TGroupBox;
+    Label1: TLabel;
+    edtCaracteres: TEdit;
+    btnExibirDataHora: TButton;
+    ImageList1: TImageList;
+    Panel1: TPanel;
+    Button1: TButton;
+    rgpListasOpcoes: TRadioGroup;
+    Button2: TButton;
+    Label2: TLabel;
+    lbxItensSelecionados: TListBox;
+    Button3: TButton;
+    procedure FormShow(Sender: TObject);
+    procedure edtCaracteresEnter(Sender: TObject);
+    procedure edtCaracteresExit(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmPrincipal: TfrmPrincipal;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmPrincipal.Button1Click(Sender: TObject);
+begin
+    pgCtrlPrincipal.ActivePageIndex := 1;
+end;
+
+procedure TfrmPrincipal.Button3Click(Sender: TObject);
+begin
+    if rgpListasOpcoes.ItemIndex >= 0 then
+      begin
+        lbxItensSelecionados.Items.Add
+        (rgpListasOpcoes.Items[rgpListasOpcoes.ItemIndex]);
+        rgpListasOpcoes.ItemIndex := -1;
+      end
+    else
+      MessageDlg('Você não selecionou nenhum item', mtError, [mbOK], 0);
+end;
+
+procedure TfrmPrincipal.edtCaracteresEnter(Sender: TObject);
+begin
+    EdtCaracteres.Color := $00B9FFFF;
+end;
+
+procedure TfrmPrincipal.edtCaracteresExit(Sender: TObject);
+begin
+    if EdtCaracteres.Text = '' then
+    begin
+      MessageDlg('Voce nao digitou nenhum conteudo', mtInformation, [mbOK], 0);
+      EdtCaracteres.SetFocus;
+    end
+    else
+      if Length(EdtCaracteres.Text) <> 4 then
+      begin
+        MessageDlg('Voce nao digitou 4 caracteres', mtError, [mbOK], 0);
+        EdtCaracteres.SetFocus;
+        EdtCaracteres.SelectAll;
+      end
+      else
+        EdtCaracteres.Color := clWindow;
+end;
+
+procedure TfrmPrincipal.FormShow(Sender: TObject);
+begin
+    PnlTitulo.Caption := 'Mudando o caption do Panel com onShow';
+    PnlTitulo.Color   := $00B9FFFF;
+end;
+
+end.
